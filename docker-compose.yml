@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  postgresdb:
+    image: "postgres:latest"
+    container_name: "postgresdb"
+    volumes:
+      # to persist any changes related to the container if it is removed.
+      - ./db-data/:/var/lib/postgresql/data/
+    env_file:
+      - env.yml
+    ports:
+      - 5001:5432
