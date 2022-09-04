@@ -7,6 +7,7 @@ authors = ["Mattias Sjödin <mattias.sjodin.6764@hotmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 docker-compose = "^1.29.2"
+psycopg2 = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.20.0"
